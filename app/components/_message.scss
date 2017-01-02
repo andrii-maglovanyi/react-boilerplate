@@ -1,0 +1,24 @@
+.message {
+  padding: .5rem;
+  transition: background .3s ease;
+
+  &:hover {
+    background: $gray-lighter;
+  }
+
+  p {
+    margin: .2rem;
+  }
+
+  &__name {
+    color: $gray-light;
+    font-size: $font-size-small;
+    padding-left: 1rem;
+  }
+
+  &--anonymous {
+    p {
+      color: $gray-light;
+    }
+  }
+}

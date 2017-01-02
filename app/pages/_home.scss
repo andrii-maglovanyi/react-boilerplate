@@ -1,0 +1,11 @@
+.home {
+  p {
+    margin: 0;
+    padding: .5rem;
+    transition: background .3s ease;
+
+    &:hover {
+      background: $gray-lighter;
+    }
+  }
+}

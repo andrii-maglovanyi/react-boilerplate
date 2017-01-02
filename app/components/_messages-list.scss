@@ -1,0 +1,11 @@
+.messages-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__notification {
+    color: $gray-light;
+    margin: 2rem auto;
+    text-align: center;
+  }
+}

@@ -1,0 +1,24 @@
+# editors
+.idea/
+
+# dependencies
+node_modules/
+
+# testing
+coverage/
+
+# production
+public/bundle.js
+public/main-*.js
+
+# environment variables
+config/*.env
+
+# logs
+*.log
+
+# OS generated files
+.DS_Store
+
+._*
+Thumbs.db

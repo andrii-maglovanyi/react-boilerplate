@@ -1,0 +1,50 @@
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+$white-base:            #fff;
+$white-dark:            darken($white-base, 14%) !default; // dbdbdb
+$white:                 darken($white-base, 5%) !default; // f2f2f2
+$white-light:           darken($white-base, 3%) !default; // f7f7f7
+
+$gray-base:             #000 !default;
+$gray-darker:           lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:             lighten($gray-base, 20%) !default;   // #333
+$gray:                  lighten($gray-base, 33.5%) !default; // #555
+$gray-light:            lighten($gray-base, 46.7%) !default; // #777
+$gray-lighter:          lighten($gray-base, 93.5%) !default; // #eee
+
+$brand-primary:         #337ab7 !default;
+$brand-primary-light:   lighten($brand-primary, 46%) !default;
+$brand-primary-lighter: lighten($brand-primary, 48%) !default;
+
+$brand-success:         #5cb85c !default;
+$brand-info:            #5bc0de !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+$body-bg:               #fff !default;
+//** Global text color on `<body>`.
+$text-color:            $gray-dark !default;
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+$text-font-stack:         "Lato", sans-serif !default;
+
+$font-size-base:          16px;
+$font-size-large:         ceil(($font-size-base * 1.25)) !default;
+$font-size-small:         ceil(($font-size-base * .85)) !default;
+
+$font-size-h1:            floor(($font-size-base * 2.6)) !default;
+$font-size-h2:            floor(($font-size-base * 2.15)) !default;
+$font-size-h3:            ceil(($font-size-base * 1.7)) !default;
+$font-size-h4:            ceil(($font-size-base * 1.25)) !default;
+$font-size-h5:            $font-size-base !default;
+$font-size-h6:            ceil(($font-size-base * .85)) !default;
