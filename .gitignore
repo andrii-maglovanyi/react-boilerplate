@@ -10,15 +10,16 @@ coverage/
 # production
 public/bundle.js
 public/main-*.js
+public/index.html
 
 # environment variables
 config/*.env
 
-# logs
+# logs and maps
 *.log
+*.map
 
 # OS generated files
 .DS_Store
-
 ._*
 Thumbs.db
