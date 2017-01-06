@@ -9,7 +9,7 @@ describe('Home', () => {
     expect(Home).to.exist
   })
 
-  it('should render "Hello World"', () => {
+  it('should render "Home page"', () => {
     const home = shallow(<Home/>)
     expect(home.find('h1').text()).to.equal('Home page')
   })

@@ -5,6 +5,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 process.env.NODE_ENV = process.env.NODE_ENV || 'development'
 var production = process.env.NODE_ENV === 'production'
+var development = process.env.NODE_ENV === 'development'
 var test = process.env.NODE_ENV === 'test'
 
 try {
@@ -86,7 +87,10 @@ module.exports = {
       path.resolve(__dirname, './node_modules/bootstrap/scss')
     ]
   },
-  devtool: production ? undefined : '#cheap-module-source-map'
+  devtool: production ? undefined : '#cheap-module-source-map',
+  devServer: {
+    hot: true
+  }
 }
 
 if (production) {
@@ -99,6 +103,14 @@ if (production) {
       }
     })
   )
+}
+
+if (development) {
+  module.exports.module.preLoaders.push({
+    test: /\.jsx?$/,
+    loader: 'eslint',
+    exclude: /(node_modules|bower_components)/
+  })
 }
 
 if (test) {

@@ -22,7 +22,7 @@ export const fetchMessages = () => {
   return (dispatch, getState) => {
     const state = getState()
 
-    dispatch({
+    return dispatch({
       type: FETCH_MESSAGES,
       payload: state.friends.messages.length? state.friends.messages : MessagesAPI.fetchMessages()
     })

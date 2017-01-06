@@ -4,7 +4,7 @@ import {IndexLink, Link} from 'react-router'
 const Navigation = () => {
   return (
     <nav className="navbar navbar-light bg-faded">
-      <a className="navbar-brand" href="/">React Boilerplate</a>
+      <a className="navbar-brand logo" href="/"><span className="logo__img"></span>React Boilerplate</a>
       <ul className="nav navbar-nav">
         <li className="nav-item">
           <IndexLink className="nav-link" to="/">Home</IndexLink>

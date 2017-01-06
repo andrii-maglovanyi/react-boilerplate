@@ -8,13 +8,18 @@
 @import 'abstracts/variables';
 
 // 3. Base stuff
+@import 'base/reset';
 @import 'base/typography';
 
-// 4. Components
+// 4. Layout
+@import 'layout/navigation';
+@import 'layout/footer';
+
+// 5. Pages
+@import 'pages/home';
+
+// 6. Components
 @import 'components/message-form';
 @import 'components/message-search';
 @import 'components/message';
 @import 'components/messages-list';
-
-// 5. Pages
-@import 'pages/home';
